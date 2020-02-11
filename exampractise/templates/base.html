@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/variables.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/theme.css' %}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<body>
+    <!-- {% include 'partials/header.html' %} -->
+    {% include 'partials/nav.html' %}
+    <main>	
+    {% block content %}
+    {% endblock %}
+    </main>
+    {% include 'partials/footer.html' %}
+</body>
+</html>
